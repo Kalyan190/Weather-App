@@ -127,16 +127,16 @@ const Weather = () => {
     };
 
     return (
-        <div className='w-full h-screen relative flex p-2 place-content-center bg-gray-900 font-lato'>
+        <div className='w-full h-screen relative flex p-2 place-content-center bg-gray-900 font-lato font-bold'>
             <main className='mt-16'>
-                <div className='w-full flex items-center justify-center gap-3'>
+                <div className='w-full flex items-center justify-center gap-3 '>
                     <input
                         type='text'
                         placeholder='Search...'
                         value={query}
                         onChange={e => setQuery(e.target.value)}
                         onKeyPress={handleSearch}
-                        className='w-56 md:w-96 p-2 rounded-md font-medium shadow-xl shadow-black bg-slate-200 outline-none'
+                        className='w-56 md:w-96 p-2 rounded-md  shadow-xl shadow-black bg-slate-200 outline-none '
                     />
                     <button className='bg-white w-10 md:hidden sm:hidden h-10 p-2 flex items-center justify-center rounded-full' onClick={SearchWeather}><img src={Search}className='w-5'></img></button>
                 </div>
@@ -151,7 +151,7 @@ const Weather = () => {
                             </div>
                         </div>
                        <div>
-                        <div className='bg-gradient-to-br from-fuchsia-500 via-violet-600 to-indigo-700 sm:w-80 md:w-96 flex flex-col items-center justify-center rounded-md shadow-sm shadow-blue-900 p-3 font-medium hover:bg-gradient-to-tr hover:from-violet-900 hover:to-violet-200 '>
+                        <div className='bg-gradient-to-br from-fuchsia-500 via-violet-600 to-indigo-700 sm:w-80 md:w-96 flex flex-col items-center justify-center rounded-md shadow-sm shadow-blue-900 p-3 hover:bg-gradient-to-tr hover:from-violet-900 hover:to-violet-200 '>
                             <img src={cloudImage} alt='error' className='w-20' />
                             <div className='temp'>
                                 {Math.round(weatherData.main.temp)} °C
@@ -162,7 +162,7 @@ const Weather = () => {
                             <div>
                                 feels like {Math.round(weatherData.main.feels_like)} °C
                             </div>
-                            <div className='wind-info flex mt-8 items-center justify-center gap-2 md:gap-8 font-medium'>
+                            <div className='wind-info flex mt-8 items-center justify-center gap-2 md:gap-8 '>
                                 <div className='flex items-center justify-center gap-2 md:gap-4'>
                                     <img src={humidity} className='w-8 h-6 md:h-8' />
                                     <p className='flex flex-col'>
