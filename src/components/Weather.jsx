@@ -128,7 +128,9 @@ const Weather = () => {
 
     return (
         <div className='w-full h-screen relative flex p-2 place-content-center bg-gray-900 font-lato font-bold'>
-            <main className='mt-16'>
+            
+            <main className='mt-8 flex flex-col items-center'>
+            <div className='text-white flex w-full justify-center mb-6 border-b-4 font-black text-2xl'>Live Weather Information</div>
                 <div className='w-full flex items-center justify-center gap-3 '>
                     <input
                         type='text'
